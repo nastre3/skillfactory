@@ -20,3 +20,4 @@ git checkout <name> // перейти в ветку
 dir // просмотр файлов в Windows
 git checkout - // переход на предыдущую используемую ветку
 git checkout -b // создание ветки и переход в нее
+Changes in main by 17-3 (4 point)
