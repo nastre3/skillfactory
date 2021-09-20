@@ -1,23 +1,21 @@
-git clone https://github.com/yourname/folder.git // клонирование репозитория
-git diff // просмотр изменений
-git add . // добавление изменений/файла
-git commit // сохранение изменений
-git commit -am "change1" // сохранение изменений c описанием коммита
-git commit --amend // изменение описания коммита
-git mv <source> <destination> // перемещение файла
-git status //просмотр коммитов
-git log // история всех коммитов
-git reset <commit_hash> // восстановление коммита (отмена изменений)
-git stash // скрыть изменения без коммита
-git stash -u // скрыть изменения без коммита в неотслеживаемых файлах
-git stash list // показать скрытые изменения без коммита
-git stash pop // вернуть скрытые изменения без коммита
-git restore <file> // восстановить файл
-git checkout -- <file> // восстановить файл (старая версия git)
-git branch // просмотр веток
-git branch <name> // создать ветку
-git checkout <name> // перейти в ветку
-dir // просмотр файлов в Windows
-git checkout - // переход на предыдущую используемую ветку
-git checkout -b // создание ветки и переход в нее
-Changes in main by 17-3 (4 point)
+// commands for module_17_unit_4
+git switch -c 15-4-feature-1
+git status
+git add .
+git commit -am "added file feature.txt"
+git status
+git add .
+git commit -am "1st conflict commit"
+git switch -c 15-4-feature-2
+git status
+git add .
+git commit -am "2nd conflict commit"
+git switch -c 15-4-feature-3
+git add .
+git commit -am "3rd conflict commit"
+git push origin 15-4-feature-1
+git push origin 15-4-feature-2
+git push origin 15-4-feature-3
+git checkout main
+git branch
+git merge 15-4-feature-1
